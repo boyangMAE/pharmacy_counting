@@ -1,15 +1,12 @@
 # This is an R script to test the function by using a test input file
 # "https://raw.githubusercontent.com/boyangMAE/pharmacy_counting/master/input/inputtest.txt"
-# read the test data file
-data <- "https://raw.githubusercontent.com/boyangMAE/pharmacy_counting/master/src/inputtest.txt"
-#
 # read the test data file to a dataframe in R
-testdata <- read.table(data,header=TRUE, sep=",",fill=TRUE)
+testdata <- read.table("inputtest.txt",header=TRUE, sep=",",fill=TRUE)
 #
 # please use this "fread" function to read the full dataset
 # library(data.table)
 # fulldata <- fread("de_cc_data.txt")
-
+#
 # count how many precribers for a certain drug
 num_id <- aggregate(data=testdata, id ~ drug_name, function(x) length(unique(x)))
 #                    
@@ -26,9 +23,10 @@ colnames(total) <- c("drug_name", "num_prescriber","total_cost")
 total <- total[order(-total$total_cost),]
 #
 # output file
-write.table(total,file="./outputtest.txt",sep=",",quote=FALSE,row.name=FALSE)                     
+write.table(total,file="./output/outputtest.txt",sep=",",quote=FALSE,row.name=FALSE)                     
                         
-#########################
+#########################code for the full dataset below this
+## Two ## signs mean comments and One # sign means R code for the full dataset.                        
 ## To run the full dataset, please change the data to fulldata
 ## count how many precribers for a certain drug
 # num_id <- aggregate(data=fulldata, id ~ drug_name, function(x) length(unique(x)))
@@ -47,4 +45,4 @@ write.table(total,file="./outputtest.txt",sep=",",quote=FALSE,row.name=FALSE)
 #
 ## output file
 # fwrite(total,"output.txt")                    
-    
+######################### end

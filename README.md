@@ -1,7 +1,7 @@
 # pharmacy_counting
 testcode\
 Run a R code on a small dataset with duplicated prescribers.\
-The input file is
+The input file "inputtest.txt" is
 
 id,prescriber_last_name,prescriber_first_name,drug_name,drug_cost\
 1000000001,Smith,James,AMBIEN,100\
@@ -13,7 +13,7 @@ id,prescriber_last_name,prescriber_first_name,drug_name,drug_cost\
 1000000006,Khaled,Alex,AMOXICILLIN,300\
 1000000007,Lee,Kevin,AMOXICILLIN,50
 
-The output file should be
+The output file "outputtest.txt" should be
 
 drug_name,num_prescriber,total_cost\
 BENZTROPINE MESYLATE,1,3000\

@@ -28,11 +28,11 @@ The read.table function was used for the small test case.  But when using the fu
 
 fulldata <- fread(data,header=TRUE, sep=",")
 
-2. count how many precribers for a certain drug
+2. count how many precribers for a certain drug by using the "aggregate" function with the "unique" function.
 
-3. calculate the total cost of each drug
+3. calculate the total cost of each drug by using the "aggregate" function.
 
-4. sort the file by ordering the total cost.
+4. sort the file by ordering the total cost by using the "order" function.
 
 # Comment
 The draft.R was successfully tested on the local desktop for both the test input and the full dataset, but I cannot run it through Github. I have some reading or path settings challenges but I think it is not a real math or logical challenge.  Hopefully, you still could evaluate my code.  Thanks.

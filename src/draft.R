@@ -4,7 +4,7 @@
 data <- "https://raw.githubusercontent.com/boyangMAE/pharmacy_counting/master/input/inputtest.txt"
 #
 # read the test data file to a dataframe in R
-testdata <- read.table(data,header=TRUE, sep=",")
+testdata <- read.table(data,header=TRUE, sep=",",fill=TRUE)
 #
 # please use this "fread" function to read the full dataset
 # library(data.table)

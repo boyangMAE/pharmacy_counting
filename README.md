@@ -13,3 +13,11 @@ id,prescriber_last_name,prescriber_first_name,drug_name,drug_cost\
 1000000006,Khaled,Alex,AMOXICILLIN,300\
 1000000007,Lee,Kevin,AMOXICILLIN,50
 
+The output file should be
+
+drug_name,num_prescriber,total_cost\
+BENZTROPINE MESYLATE,1,3000\
+CHLORPROMAZINE,2,3000\
+AMOXICILLIN,2,350\
+AMBIEN,2,300
+

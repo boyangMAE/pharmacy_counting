@@ -21,7 +21,7 @@ CHLORPROMAZINE,2,3000\
 AMOXICILLIN,2,350\
 AMBIEN,2,300
 
-In the source code, there are 3 steps.
+In the source code, there are 4 steps.
 1. read the test data file to a dataframe in R
 The read.table function was used for the small test case.  But when using the full (large) case, the fread function is much better.
 

@@ -35,4 +35,4 @@ fulldata <- fread(data,header=TRUE, sep=",")
 4. sort the file by ordering the total cost.
 
 # Comment
-The draft.R was successfully tested on the local desktop, but I cannot run it through Github. I have some reading or path settings challenges but I think it is not a real math or logical challenge.  Hopefully, you still could evaluate my code.  Thanks.
+The draft.R was successfully tested on the local desktop for both the test input and the full dataset, but I cannot run it through Github. I have some reading or path settings challenges but I think it is not a real math or logical challenge.  Hopefully, you still could evaluate my code.  Thanks.

@@ -36,7 +36,7 @@ The unique function will handle the duplicated prescribers. They have the same i
 4. sort the file by ordering the total cost by using the "order" function.
 
 # Comment
-The draft.R was successfully tested on the local desktop for both the test input and the full dataset, but I cannot run it through Github. I have some reading or path settings challenges but I think it is not a real math or logical challenge.  Hopefully, you still could evaluate my code.  Thanks.
-The whole code could be written in a function, but I write down each part separately for readers.
+The draft.R was successfully tested on the local desktop for both the test input and the full dataset, but I cannot run it through Github. I have some reading or path settings challenges but I think it is not a real math or logical challenge.  Hopefully, you still could evaluate my code.  Thanks.\
+The whole code could be written in a function, but I write down each part separately for readers.\
 The library data.table is for reading and writing data.
 

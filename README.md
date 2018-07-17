@@ -21,3 +21,5 @@ CHLORPROMAZINE,2,3000\
 AMOXICILLIN,2,350\
 AMBIEN,2,300
 
+In the source code, there are 3 steps.\
+1. 

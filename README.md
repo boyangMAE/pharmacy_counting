@@ -1,5 +1,5 @@
 # pharmacy_counting
-testcode\
+# testcode
 Run a R code on a small dataset with duplicated prescribers.\
 The input file "inputtest.txt" is
 
@@ -21,6 +21,7 @@ CHLORPROMAZINE,2,3000\
 AMOXICILLIN,2,350\
 AMBIEN,2,300
 
+# Method
 In the source code, there are 4 steps.
 1. read the test data file to a dataframe in R
 The read.table function was used for the small test case.  But when using the full (large) case, the fread function is much better.
@@ -33,4 +34,5 @@ fulldata <- fread(data,header=TRUE, sep=",")
 
 4. sort the file by ordering the total cost.
 
+# Comment
 The draft.R was successfully tested on the local desktop, but I cannot run it through Github. I have some reading or path settings challenges but I think it is not a real math or logical challenge.  Hopefully, you still could evaluate my code.  Thanks.

@@ -22,4 +22,25 @@ AMOXICILLIN,2,350\
 AMBIEN,2,300
 
 In the source code, there are 3 steps.\
-1. 
+1. read the test data file to a dataframe in R
+The read.table function was used for the small test case.  But when using the full (large) case, the fread function is much better.
+
+fulldata <- fread("/by57/Insightdata/de_cc_data.txt")
+#
+
+# count how many precribers for a certain drug
+num_id <- aggregate(data=testdata, id ~ drug_name, function(x) length(unique(x)))
+#                    
+# calculate the total cost of a certain drug
+total_cost <- aggregate(data=testdata, drug_cost ~ drug_name, function(x) sum(x))
+#
+# prepare the output file by merging the two temporary dataframes
+total <- merge(num_id,total_cost)
+#
+# edit the column names
+colnames(total) <- c("drug_name", "num_prescriber","total_cost")
+#
+# sort/order the data by using descending total cost                       
+total <- total[order(-total$total_cost),]
+#
+# output file

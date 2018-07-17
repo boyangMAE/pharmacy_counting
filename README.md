@@ -32,3 +32,5 @@ fulldata <- fread(data,header=TRUE, sep=",")
 3. calculate the total cost of each drug
 
 4. sort the file by ordering the total cost.
+
+The draft.R was successfully tested on the local desktop, but I cannot run it through Github. I have some reading or path settings challenges but I think it is not a real math or logical challenge.  Hopefully, you still could evaluate my code.  Thanks.

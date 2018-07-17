@@ -31,7 +31,8 @@ fulldata <- fread("de_cc_data.txt",header=TRUE, sep=",")
 2. count how many precribers for a certain drug by using the "aggregate" function with the "unique" function.\
 The unique function will handle the duplicated prescribers. They have the same id, first name, and last name.
 
-3. calculate the total cost of each drug by using the "aggregate" function.
+3. calculate the total cost of each drug by using the "aggregate" function.\
+Step2 and Step3 can be made by using for loops, but they would be very slow in R, especially when the dataset is large.
 
 4. sort the file by ordering the total cost by using the "order" function.
 

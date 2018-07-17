@@ -4,6 +4,10 @@ data <- "https://raw.githubusercontent.com/boyangMAE/pharmacy_counting/master/in
 # read the test data file to a dataframe in R
 testdata <- read.table(data,header=TRUE, sep=",")
 #
+# please use this "fread" function to read the full dataset
+# library(data.table)
+# fulldata <- fread("https://drive.google.com/file/d/1fxtTLR_Z5fTO-Y91BnKOQd6J0VC9gPO3/view?usp=sharing")
+
 # count how many precribers for a certain drug
 num_id <- aggregate(data=testdata, id ~ drug_name, function(x) length(unique(x)))
 #                    

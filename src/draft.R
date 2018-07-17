@@ -1,3 +1,5 @@
+# This is an R script to test the function by using a test input file
+# "https://raw.githubusercontent.com/boyangMAE/pharmacy_counting/master/input/inputtest.txt"
 # read the test data file
 data <- "https://raw.githubusercontent.com/boyangMAE/pharmacy_counting/master/input/inputtest.txt"
 #

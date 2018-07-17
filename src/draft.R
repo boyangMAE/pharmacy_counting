@@ -1,14 +1,14 @@
 # This is an R script to test the function by using a test input file
 # "https://raw.githubusercontent.com/boyangMAE/pharmacy_counting/master/input/inputtest.txt"
 # read the test data file
-data <- "https://raw.githubusercontent.com/boyangMAE/pharmacy_counting/master/input/inputtest.txt"
+data <- "https://raw.githubusercontent.com/boyangMAE/pharmacy_counting/master/src/inputtest.txt"
 #
 # read the test data file to a dataframe in R
 testdata <- read.table(data,header=TRUE, sep=",",fill=TRUE)
 #
 # please use this "fread" function to read the full dataset
 # library(data.table)
-# fulldata <- fread("https://drive.google.com/file/d/1fxtTLR_Z5fTO-Y91BnKOQd6J0VC9gPO3/view?usp=sharing")
+# fulldata <- fread("de_cc_data.txt")
 
 # count how many precribers for a certain drug
 num_id <- aggregate(data=testdata, id ~ drug_name, function(x) length(unique(x)))

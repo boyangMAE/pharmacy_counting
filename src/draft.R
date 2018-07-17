@@ -28,6 +28,9 @@ write.table(total,file="./output/outputtest.txt",sep=",",quote=FALSE,row.name=FA
 #########################code for the full dataset below this
 ## Two ## signs mean comments and One # sign means R code for the full dataset.                        
 ## To run the full dataset, please change the data to fulldata
+# library(data.table)
+# fulldata <- fread("de_cc_data.txt")
+#                        
 ## count how many precribers for a certain drug
 # num_id <- aggregate(data=fulldata, id ~ drug_name, function(x) length(unique(x)))
 #                    

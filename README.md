@@ -1,6 +1,6 @@
 # pharmacy_counting
 # testcode
-Run a R code on a small dataset with duplicated prescribers.\
+Run a R code on a small dataset with duplicated prescribers with the same id.\
 The input file "inputtest.txt" is
 
 id,prescriber_last_name,prescriber_first_name,drug_name,drug_cost\
@@ -28,7 +28,8 @@ The read.table function was used for the small test case.  But when using the fu
 
 fulldata <- fread(data,header=TRUE, sep=",")
 
-2. count how many precribers for a certain drug by using the "aggregate" function with the "unique" function.
+2. count how many precribers for a certain drug by using the "aggregate" function with the "unique" function.\
+The unique function will handle the duplicated prescribers. They have the same id, first name, and last name.
 
 3. calculate the total cost of each drug by using the "aggregate" function.
 

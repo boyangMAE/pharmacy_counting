@@ -26,4 +26,25 @@ colnames(total) <- c("drug_name", "num_prescriber","total_cost")
 total <- total[order(-total$total_cost),]
 #
 # output file
-write.table(total,file="./outputtest.txt",sep=",",quote=FALSE,row.name=FALSE)
+write.table(total,file="./outputtest.txt",sep=",",quote=FALSE,row.name=FALSE)                     
+                        
+#########################
+## To run the full dataset, please change the data to fulldata
+## count how many precribers for a certain drug
+# num_id <- aggregate(data=fulldata, id ~ drug_name, function(x) length(unique(x)))
+#                    
+## calculate the total cost of a certain drug
+# total_cost <- aggregate(data=fulldata, drug_cost ~ drug_name, function(x) sum(x))
+#
+## prepare the output file by merging the two temporary dataframes
+# total <- merge(num_id,total_cost)
+#
+## edit the column names
+# colnames(total) <- c("drug_name", "num_prescriber","total_cost")
+#
+## sort/order the data by using descending total cost                       
+# total <- total[order(-total$total_cost),]
+#
+## output file
+# fwrite(total,"output.txt")                    
+    

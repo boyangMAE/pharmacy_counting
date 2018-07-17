@@ -26,7 +26,7 @@ In the source code, there are 4 steps.
 1. read the test data file to a dataframe in R
 The read.table function was used for the small test case.  But when using the full (large) case, the fread function is much better.
 
-fulldata <- fread(data,header=TRUE, sep=",")
+fulldata <- fread("de_cc_data.txt",header=TRUE, sep=",")
 
 2. count how many precribers for a certain drug by using the "aggregate" function with the "unique" function.\
 The unique function will handle the duplicated prescribers. They have the same id, first name, and last name.
@@ -37,3 +37,4 @@ The unique function will handle the duplicated prescribers. They have the same i
 
 # Comment
 The draft.R was successfully tested on the local desktop for both the test input and the full dataset, but I cannot run it through Github. I have some reading or path settings challenges but I think it is not a real math or logical challenge.  Hopefully, you still could evaluate my code.  Thanks.
+The whole code could be written in a function, but I write down each part separately for readers.
